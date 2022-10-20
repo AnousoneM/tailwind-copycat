@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(60, 61, 70);
+}
+
+.container {
+  /* Dégradé de couleur */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  width: 85vw;
+  height: 70vh;
+
+  margin: 4rem auto;
+}
+
+main {
+  height: 80%;
+}
+
+article {
+  position: relative;
+  z-index: 3;
+
+  top: 40%;
+  left: 5%;
+
+  /* De l'ombre sous la box */
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+
+  background-color: white;
+  border-radius: 10px;
+  height: 45%;
+  width: 45%;
+}
+
+blockquote {
+  font-weight: bold;
+  margin: 0;
+}
+
+.code-preview {
+  position: relative;
+  z-index: 1;
+
+  top: -40%;
+  left: 48%;
+  border: 1px black solid;
+
+  /* De l'ombre sous la box */
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+
+  background-image: url(../img/code2.png);
+  background-size: cover;
+
+  border-radius: 10px;
+  height: 100%;
+  width: 48%;
+}
+
+.bottom-line {
+  z-index: 2;
+  border-top: 1px solid rgb(79, 79, 79);
+  background-color: white;
+  height: 20%;
+}
+
+.avatar {
+  float: left;
+  height: 100%;
+}
+
+.text {
+  padding: 1rem 2rem;
+  overflow: auto;
+}
+
+.img-fluid {
+  float: left;
+  border-radius: 10px 0 0 10px;
+
+  /* pour garder les proportions de l'image  */
+  height: 100%;
+  width: auto;
+}
+
+.name {
+  color: rgb(84, 131, 207);
+  margin: 0;
+}
+
+.role {
+  margin: 0;
+}
